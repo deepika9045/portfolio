@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #749b5b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #bcd4e6;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #45cd53;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h3 {
+            color: #666;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #888;
+        }
+
+        footer {
+            background-color: #b0b39ea2;
+            color: #afca85;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Deepika udayagiri</h1>
+            <p>Student</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/varshitha-ganga-9ba2b2259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section" style="background-color: #e6eff5;">
+        <div class="container">
+            <h2>About Me</h2>
+            <p style="color: #444;">I am a second-year student with experience in programming, great time management abilities, and the capacity to quickly learn new things. I have a great passion for learning, a calm disposition, and a natural ability to solve problems. I also have excellent verbal communication abilities which help me to work effectively with clients and team members. I am dedicated to producing high-quality work and always eager to take on new challenges, going above and beyond to ensure project success.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section" style="background-color: #f5f8fa;">
+        <div class="container">
+            <h2>Skills</h2>
+            <h3>Programming Languages:</h3>
+            <ul>
+                <li>C: Proficient</li>
+                <li>C++: Proficient</li>
+            </ul>
+            <h3>Data Structures and Algorithms:</h3>
+            <ul>
+                <li>Proficient in designing and implementing data structures</li>
+                <li>Proficient in analyzing algorithms and problem-solving</li>
+            </ul>
+            <h3>Frontend Development:</h3>
+            <ul>
+                <li>HTML: Proficient</li>
+                <li>CSS: Proficient</li>
+                <li>JavaScript: Proficient</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section" style="background-color: #e6eff5;">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Phone Book Management</h3>
+                <p>This application is developed using C++.</p>
+            </div>
+            <div class="project">
+                <h3>Polynomial Calculator</h3>
+                <p>This application is developed using Data structures and Algorithms.</p>
+            </div>
+            <div class="project">
+                <h3>Hotel Management</h3>
+                <p>This application is developed using C language.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section" style="background-color: #f5f8fa;">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume <a href=" " target="_blank">here</a>.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background-color: #c88fc5;">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:varshithachowdary_ganga@srmap.edu.in">devinagasaideepika_udayagiri@srmap.edu.in</a> (Primary)</p>
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DEEPIKA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Here, you can add code to handle form submission, such as sending an email or storing data in a database
+            console.log('Form submitted:');
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            // For demonstration purposes, we'll just reset the form
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+
+            alert('Message sent successfully!');
+        });
+    </script>
+</body>
+</html>
